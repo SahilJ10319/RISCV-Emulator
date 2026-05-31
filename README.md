@@ -53,5 +53,5 @@ make
 ## What I Learned
 
 - **Decoding instructions cleanly** is the hardest part — extracting the right bit slices for opcode, rs1, rs2, rd, funct3, funct7, and immediates without writing 40 magic numbers takes thought. Bitfield macros help.
-- **Sign extension** trips up beginners constantly. Immediates in B-type and J-type are not just "the low N bits."
+- **Sign extension** trips up beginners frequently. Immediates in B-type and J-type are not just "the low N bits."
 - **Two's complement arithmetic in C** mostly Just Works because of how C casts signed/unsigned integers, but the few places it doesn't (right-shift on signed types, overflow in add) are subtle.
